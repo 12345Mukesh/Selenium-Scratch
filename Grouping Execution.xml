@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="All Groups">
+  <include name="IT Group"></include>
+  <include name="Smoke Group"></include>
+  <include name="Functional Group"></include>
+  </define>
+  <run>
+  <include name="All Groups"></include>
+  <exclude name="Smoke Group"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestNG.GroupingExecution"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Facebook Opened]]>
+    </line>
+    <line>
+      <![CDATA[Gmail Opened]]>
+    </line>
+    <line>
+      <![CDATA[Whatsapp Opened]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-07T15:07:00 IST" name="Suite" finished-at="2022-11-07T15:07:22 IST" duration-ms="22123">
+    <groups>
+    </groups>
+    <test started-at="2022-11-07T15:07:00 IST" name="Test1" finished-at="2022-11-07T15:07:12 IST" duration-ms="12091">
+      <class name="TestNGCrossBrowserParallel.CrossBrowserTest1">
+        <test-method signature="Method1()[pri:0, instance:TestNGCrossBrowserParallel.CrossBrowserTest1@3c7f66c4]" started-at="2022-11-07T15:07:00 IST" name="Method1" finished-at="2022-11-07T15:07:12 IST" duration-ms="12017" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Facebook Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Method1 -->
+      </class> <!-- TestNGCrossBrowserParallel.CrossBrowserTest1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-11-07T15:07:00 IST" name="Test3" finished-at="2022-11-07T15:07:14 IST" duration-ms="13883">
+      <class name="TestNGCrossBrowserParallel.CrossBrowserTest3">
+        <test-method signature="Method3()[pri:0, instance:TestNGCrossBrowserParallel.CrossBrowserTest3@63376bed]" started-at="2022-11-07T15:07:00 IST" name="Method3" finished-at="2022-11-07T15:07:14 IST" duration-ms="13819" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Gmail Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Method3 -->
+      </class> <!-- TestNGCrossBrowserParallel.CrossBrowserTest3 -->
+    </test> <!-- Test3 -->
+    <test started-at="2022-11-07T15:07:00 IST" name="Test2" finished-at="2022-11-07T15:07:22 IST" duration-ms="22123">
+      <class name="TestNGCrossBrowserParallel.CrossBrowserTest2">
+        <test-method signature="Method2()[pri:0, instance:TestNGCrossBrowserParallel.CrossBrowserTest2@368247b9]" started-at="2022-11-07T15:07:00 IST" name="Method2" finished-at="2022-11-07T15:07:22 IST" duration-ms="22062" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Whatsapp Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Method2 -->
+      </class> <!-- TestNGCrossBrowserParallel.CrossBrowserTest2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

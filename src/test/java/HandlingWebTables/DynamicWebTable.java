@@ -13,7 +13,7 @@ public class DynamicWebTable {
 	{
 	   
 		WebDriver driver= new ChromeDriver();
-		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

@@ -12,9 +12,9 @@ public class AllPopUps {
 	public static void main(String[] args) throws InterruptedException 
 	{
 	
-		
+		 System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		  System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		 
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
 		 
