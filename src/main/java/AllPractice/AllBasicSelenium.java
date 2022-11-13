@@ -137,22 +137,20 @@ public class AllBasicSelenium {
 		// 3. Pressing on Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-		
-		
-		Date currentdate= new Date();
-		String screenshot= currentdate.toString().replace(":", "-");
+
+		Date currentdate = new Date();
+		String screenshot = currentdate.toString().replace(":", "-");
 		System.out.println(screenshot);
-		
-	   
-		
-	   //1.Full page screenshot 
-		
-	   Screenshot screen= new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(driver);
-		
-	   ImageIO.write(screen.getImage(), "PNG", new File("./screenshot/AllBasicFullPageScreenshot'"+screenshot+"'.png"));
-	   
-	   driver.quit();
-	   
+
+		// 1.Full page screenshot
+
+		Screenshot screen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100))
+				.takeScreenshot(driver);
+
+		ImageIO.write(screen.getImage(), "PNG",
+				new File("./screenshot/AllBasicFullPageScreenshot'" + screenshot + "'.png"));
+
+		driver.quit();
 
 	}
 
