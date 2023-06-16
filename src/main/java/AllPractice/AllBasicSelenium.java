@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.google.inject.Key;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -34,7 +35,7 @@ public class AllBasicSelenium {
 		 * @Description="Basic OverAll Selenium"
 		 * 
 		 */
-		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://itera-qa.azurewebsites.net/home/automation");
@@ -125,7 +126,7 @@ public class AllBasicSelenium {
 		rb.delay(3000);
 
 		// 1.copying the file to clipboard
-		StringSelection ss = new StringSelection("C:\\Users\\Mukesh\\Desktop\\Offer - S Mukeshali.pdf");
+		StringSelection ss = new StringSelection("C:\\Users\\Mukesh\\Desktop\\Manual Testing");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
 		// 2.pasting the file using press and Release methods

@@ -29,12 +29,6 @@ public class OrangeHRMPractice {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
-
-		/*
-		 * Buttons are not clicking and sending text when going to third page of Scripting
-		 * Throwing Element Click Intercepted Exception
-		 * 
-		 */
 		
 		WebElement username = driver.findElement(By.xpath("//input[@name='username']"));
 		username.sendKeys("Admin");
