@@ -35,7 +35,7 @@ public class AllBasicSelenium {
 		 * @Description="Basic OverAll Selenium"
 		 * 
 		 */
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().clearDriverCache().setup();
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://itera-qa.azurewebsites.net/home/automation");

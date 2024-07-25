@@ -8,12 +8,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DateSelection {
 
 	public static void main(String[] args) 
 	{
+		WebDriverManager.chromedriver().clearDriverCache().setup();
 		WebDriver driver= new ChromeDriver();
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -23,7 +26,7 @@ public class DateSelection {
 		String month="Oct";
 		String date="25";
 		
-		driver.findElement(By.xpath("//input[@id='onward_cal']")).click();
+		//driver.findElement(By.xpath("//input[@id='onward_cal']")).click();
 		
          // The selecting year and month should match with the input year and month
 		//Month and Year

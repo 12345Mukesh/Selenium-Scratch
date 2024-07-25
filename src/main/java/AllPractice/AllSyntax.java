@@ -37,6 +37,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -45,7 +46,8 @@ public class AllSyntax {
 
 	public static void main(String[] args) throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+		WebDriverManager.chromedriver().clearDriverCache().setup();
+		//System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// 1.Initiation Methods
 		driver.get("https://www.google.com");
